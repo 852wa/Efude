@@ -25,6 +25,14 @@ path = [
   "crates/efude-comic/Cargo.toml",
   "crates/efude/Cargo.toml",
   "crates/efude/README.md",
+  "crates/efude-core/README.md",
+  "crates/efude-input/README.md",
+  "crates/efude-stroke/README.md",
+  "crates/efude-brush/README.md",
+  "crates/efude-canvas/README.md",
+  "crates/efude-gpu/README.md",
+  "crates/efude-io/README.md",
+  "crates/efude-comic/README.md",
 ]
 SPDX-FileCopyrightText = "2026 Hakoniwa"
 SPDX-License-Identifier = "MIT OR Apache-2.0"

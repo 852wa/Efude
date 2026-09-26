@@ -54,6 +54,12 @@ The UI and the app are not (`publish = false`).
 A published version cannot be replaced (only yanked), so publish after the
 release tag's CI run is green.
 
+The maintainer's local `publish-crates.bat` (not in the repository) checks
+that everything is committed and pushed, runs the dry run, asks, and then
+publishes. Each crate carries its own `README.md`, `LICENSE-MIT` and
+`LICENSE-APACHE` (copies of the files at the repository root; keep them in
+sync).
+
 ## Windows release signing
 
 The Windows CI workflow can sign the release executable and MSI before it packages the portable ZIP. Signing runs only for version tags (`v*`) and only when repository variable `WINDOWS_SIGNING_ENABLED` is set to `true`.

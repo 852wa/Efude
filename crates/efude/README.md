@@ -9,4 +9,5 @@ This crate re-exports the engine crates: `efude-core`, `efude-input`,
 `efude-comic`. The app itself is not published here; download it from the
 [releases](https://github.com/852wa/Efude/releases).
 
-Licensed under MIT or Apache-2.0, at your option.
+Licensed under MIT or Apache-2.0, at your option
+([LICENSE-MIT](LICENSE-MIT), [LICENSE-APACHE](LICENSE-APACHE)).
