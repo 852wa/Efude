@@ -1,0 +1,53 @@
+[graph]
+all-features = false
+targets = ["x86_64-pc-windows-msvc"]
+[advisories]
+version = 2
+ignore = [
+  { id = "RUSTSEC-2026-0192", reason = "ttf-parser is currently pinned through epaint 0.31; track the upstream font stack update before removing this exception." },
+  { id = "RUSTSEC-2024-0436", reason = "paste is unmaintained (no vulnerability); it is a build-time macro used by egui_dock 0.16, the docking version matching egui 0.31. Remove when egui is upgraded." },
+]
+[licenses]
+version = 2
+allow = ["Apache-2.0", "MIT", "BSD-2-Clause", "BSD-3-Clause", "ISC", "Zlib", "Unicode-3.0", "CC0-1.0", "Unlicense"]
+confidence-threshold = 0.8
+exceptions = [
+  { crate = "efude-ui", allow = ["MPL-2.0"] },
+  { crate = "efude-app", allow = ["MPL-2.0"] },
+]
+[bans]
+multiple-versions = "deny"
+allow-wildcard-paths = true
+deny = [
+  { crate = "efude-core", wrappers = ["efude", "efude-input", "efude-stroke", "efude-canvas", "efude-brush", "efude-gpu", "efude-ui"], reason = "Engine crates may only be used from other engine crates or the UI/application layer." },
+  { crate = "efude-input", wrappers = ["efude", "efude-ui"], reason = "Engine crates may only be used from other engine crates or the UI/application layer." },
+  { crate = "efude-stroke", wrappers = ["efude", "efude-ui"], reason = "Engine crates may only be used from other engine crates or the UI/application layer." },
+  { crate = "efude-brush", wrappers = ["efude", "efude-gpu", "efude-ui"], reason = "Engine crates may only be used from other engine crates or the UI/application layer." },
+  { crate = "efude-canvas", wrappers = ["efude", "efude-io", "efude-brush", "efude-gpu", "efude-ui"], reason = "Engine crates may only be used from other engine crates or the UI/application layer." },
+  { crate = "efude-gpu", wrappers = ["efude", "efude-ui"], reason = "Engine crates may only be used from other engine crates or the UI/application layer." },
+  { crate = "efude-io", wrappers = ["efude", "efude-ui"], reason = "Engine crates may only be used from other engine crates or the UI/application layer." },
+  { crate = "efude-ui", wrappers = ["efude-app"], reason = "The application may depend on UI, but engine crates must remain UI-independent." },
+]
+skip = [
+  { crate = "hashbrown@0.15.5", reason = "Required by wgpu 24 GPU descriptor support; the other version is pulled by current indexmap dependencies." },
+  { crate = "miniz_oxide@0.8.9", reason = "Required by png 0.18; the newer version is selected by flate2 and ZIP compression dependencies." },
+  { crate = "rustc-hash@1.1.0", reason = "Required by the pinned naga and wgpu 24 shader stack." },
+  { crate = "rustc-hash@2.1.3", reason = "Required by egui-wgpu's type-map dependency." },
+  { crate = "syn@2.0.119", reason = "Required by dependencies still using the established Syn 2 API." },
+  { crate = "syn@3.0.6", reason = "Required by the current bytemuck derive dependency." },
+  { crate = "thiserror@1.0.69", reason = "Required by pinned upstream graphics and windowing dependencies." },
+  { crate = "thiserror@2.0.21", reason = "Required by upstream dependencies using thiserror 2." },
+  { crate = "thiserror-impl@1.0.69", reason = "Proc macro companion for upstream thiserror 1 dependencies." },
+  { crate = "thiserror-impl@2.0.21", reason = "Proc macro companion for upstream thiserror 2 dependencies." },
+  { crate = "windows-sys@0.52.0", reason = "Required by glutin and winit in the pinned eframe 0.31 stack." },
+  { crate = "windows-sys@0.59.0", reason = "Required by eframe and rfd in the pinned Windows UI stack." },
+  { crate = "windows-sys@0.61.2", reason = "Required by current Windows support crates in the dependency graph." },
+]
+wildcards = "deny"
+[bans.workspace-dependencies]
+duplicates = "allow"
+include-path-dependencies = true
+unused = "deny"
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"

@@ -1,0 +1,25 @@
+[package]
+name = "efude-brush"
+version.workspace = true
+edition.workspace = true
+license = "MIT OR Apache-2.0"
+description = "Brush engine of the Efude painting app: dabs, pressure dynamics, grain, wet mixing and brush files."
+repository.workspace = true
+homepage.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+keywords = ["painting", "brush", "drawing", "raster"]
+categories = ["graphics", "multimedia::images"]
+[dependencies]
+efude-core.workspace = true
+efude-canvas.workspace = true
+glam.workspace = true
+half.workspace = true
+serde.workspace = true
+png.workspace = true
+zip.workspace = true
+serde_json.workspace = true
+tempfile.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,2266 @@
+{
+  "version": 2,
+  "strokes": [
+    [
+      {
+        "x": 24.0,
+        "y": 90.0,
+        "pressure": 0.0,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 0
+      },
+      {
+        "x": 24.832,
+        "y": 89.88,
+        "pressure": 0.0014086325,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 4
+      },
+      {
+        "x": 25.664,
+        "y": 89.76,
+        "pressure": 0.003983743,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 8
+      },
+      {
+        "x": 26.496,
+        "y": 89.64,
+        "pressure": 0.0073171575,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 12
+      },
+      {
+        "x": 27.328,
+        "y": 89.52,
+        "pressure": 0.011262389,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 16
+      },
+      {
+        "x": 28.16,
+        "y": 89.4,
+        "pressure": 0.01573407,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 20
+      },
+      {
+        "x": 28.992,
+        "y": 89.28,
+        "pressure": 0.020673992,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 24
+      },
+      {
+        "x": 29.824001,
+        "y": 89.16,
+        "pressure": 0.026038837,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 28
+      },
+      {
+        "x": 30.656,
+        "y": 89.04,
+        "pressure": 0.031794515,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 32
+      },
+      {
+        "x": 31.487999,
+        "y": 88.92,
+        "pressure": 0.037913088,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 36
+      },
+      {
+        "x": 32.32,
+        "y": 88.8,
+        "pressure": 0.044371016,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 40
+      },
+      {
+        "x": 33.152,
+        "y": 88.68,
+        "pressure": 0.051147915,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 44
+      },
+      {
+        "x": 33.984,
+        "y": 88.56,
+        "pressure": 0.05822586,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 48
+      },
+      {
+        "x": 34.816,
+        "y": 88.44,
+        "pressure": 0.06558881,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 52
+      },
+      {
+        "x": 35.648003,
+        "y": 88.32,
+        "pressure": 0.073222235,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 56
+      },
+      {
+        "x": 36.48,
+        "y": 88.2,
+        "pressure": 0.0811128,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 60
+      },
+      {
+        "x": 37.312,
+        "y": 88.08,
+        "pressure": 0.08924825,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 64
+      },
+      {
+        "x": 38.144,
+        "y": 87.96,
+        "pressure": 0.09761706,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 68
+      },
+      {
+        "x": 38.975998,
+        "y": 87.84,
+        "pressure": 0.10620843,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 72
+      },
+      {
+        "x": 39.808,
+        "y": 87.72,
+        "pressure": 0.11501221,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 76
+      },
+      {
+        "x": 40.64,
+        "y": 87.6,
+        "pressure": 0.124018714,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 80
+      },
+      {
+        "x": 41.472,
+        "y": 87.48,
+        "pressure": 0.13321866,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 84
+      },
+      {
+        "x": 42.304,
+        "y": 87.36,
+        "pressure": 0.14260322,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 88
+      },
+      {
+        "x": 43.136,
+        "y": 87.24,
+        "pressure": 0.1521638,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 92
+      },
+      {
+        "x": 43.968002,
+        "y": 87.12,
+        "pressure": 0.16189219,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 96
+      },
+      {
+        "x": 44.800003,
+        "y": 87.0,
+        "pressure": 0.17178038,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 100
+      },
+      {
+        "x": 45.632,
+        "y": 86.88,
+        "pressure": 0.18182062,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 104
+      },
+      {
+        "x": 46.464,
+        "y": 86.76,
+        "pressure": 0.1920053,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 108
+      },
+      {
+        "x": 47.296,
+        "y": 86.64,
+        "pressure": 0.20232713,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 112
+      },
+      {
+        "x": 48.128,
+        "y": 86.52,
+        "pressure": 0.21277875,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 116
+      },
+      {
+        "x": 48.96,
+        "y": 86.4,
+        "pressure": 0.22335319,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 120
+      },
+      {
+        "x": 49.792,
+        "y": 86.28,
+        "pressure": 0.23404351,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 124
+      },
+      {
+        "x": 50.624,
+        "y": 86.16,
+        "pressure": 0.24484286,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 128
+      },
+      {
+        "x": 51.456,
+        "y": 86.04,
+        "pressure": 0.2557445,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 132
+      },
+      {
+        "x": 52.288002,
+        "y": 85.92,
+        "pressure": 0.26674193,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 136
+      },
+      {
+        "x": 53.120003,
+        "y": 85.8,
+        "pressure": 0.27782848,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 140
+      },
+      {
+        "x": 53.952,
+        "y": 85.68,
+        "pressure": 0.28899792,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 144
+      },
+      {
+        "x": 54.784,
+        "y": 85.56,
+        "pressure": 0.30024377,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 148
+      },
+      {
+        "x": 55.615997,
+        "y": 85.44,
+        "pressure": 0.31155986,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 152
+      },
+      {
+        "x": 56.448,
+        "y": 85.32,
+        "pressure": 0.32293993,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 156
+      },
+      {
+        "x": 57.28,
+        "y": 85.2,
+        "pressure": 0.3343779,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 160
+      },
+      {
+        "x": 58.112,
+        "y": 85.08,
+        "pressure": 0.34586772,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 164
+      },
+      {
+        "x": 58.944,
+        "y": 84.96,
+        "pressure": 0.3574033,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 168
+      },
+      {
+        "x": 59.776,
+        "y": 84.84,
+        "pressure": 0.36897886,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 172
+      },
+      {
+        "x": 60.608,
+        "y": 84.72,
+        "pressure": 0.3805885,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 176
+      },
+      {
+        "x": 61.440002,
+        "y": 84.6,
+        "pressure": 0.3922263,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 180
+      },
+      {
+        "x": 62.272,
+        "y": 84.48,
+        "pressure": 0.40388647,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 184
+      },
+      {
+        "x": 63.104,
+        "y": 84.36,
+        "pressure": 0.41556343,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 188
+      },
+      {
+        "x": 63.936,
+        "y": 84.24,
+        "pressure": 0.42725146,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 192
+      },
+      {
+        "x": 64.768,
+        "y": 84.12,
+        "pressure": 0.43894488,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 196
+      },
+      {
+        "x": 65.600006,
+        "y": 84.0,
+        "pressure": 0.4506382,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 200
+      },
+      {
+        "x": 66.432,
+        "y": 83.88,
+        "pressure": 0.462326,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 204
+      },
+      {
+        "x": 67.264,
+        "y": 83.76,
+        "pressure": 0.47400263,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 208
+      },
+      {
+        "x": 68.096,
+        "y": 83.64,
+        "pressure": 0.48566264,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 212
+      },
+      {
+        "x": 68.928,
+        "y": 83.52,
+        "pressure": 0.49730092,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 216
+      },
+      {
+        "x": 69.759995,
+        "y": 83.4,
+        "pressure": 0.50891197,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 220
+      },
+      {
+        "x": 70.592,
+        "y": 83.28,
+        "pressure": 0.52049047,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 224
+      },
+      {
+        "x": 71.423996,
+        "y": 83.16,
+        "pressure": 0.5320313,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 228
+      },
+      {
+        "x": 72.256,
+        "y": 83.04,
+        "pressure": 0.5435293,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 232
+      },
+      {
+        "x": 73.088,
+        "y": 82.92,
+        "pressure": 0.5549793,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 236
+      },
+      {
+        "x": 73.92,
+        "y": 82.8,
+        "pressure": 0.56637627,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 240
+      },
+      {
+        "x": 74.752,
+        "y": 82.68,
+        "pressure": 0.5777151,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 244
+      },
+      {
+        "x": 75.584,
+        "y": 82.56,
+        "pressure": 0.5889908,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 248
+      },
+      {
+        "x": 76.416,
+        "y": 82.44,
+        "pressure": 0.6001987,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 252
+      },
+      {
+        "x": 77.248,
+        "y": 82.32,
+        "pressure": 0.61133367,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 256
+      },
+      {
+        "x": 78.08,
+        "y": 82.2,
+        "pressure": 0.6223909,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 260
+      },
+      {
+        "x": 78.912,
+        "y": 82.08,
+        "pressure": 0.6333658,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 264
+      },
+      {
+        "x": 79.744,
+        "y": 81.96,
+        "pressure": 0.6442536,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 268
+      },
+      {
+        "x": 80.576004,
+        "y": 81.84,
+        "pressure": 0.6550496,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 272
+      },
+      {
+        "x": 81.408,
+        "y": 81.72,
+        "pressure": 0.66574925,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 276
+      },
+      {
+        "x": 82.240005,
+        "y": 81.6,
+        "pressure": 0.6763479,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 280
+      },
+      {
+        "x": 83.07201,
+        "y": 81.479996,
+        "pressure": 0.6868413,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 284
+      },
+      {
+        "x": 83.904,
+        "y": 81.36,
+        "pressure": 0.6972248,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 288
+      },
+      {
+        "x": 84.736,
+        "y": 81.24,
+        "pressure": 0.70749414,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 292
+      },
+      {
+        "x": 85.568,
+        "y": 81.12,
+        "pressure": 0.71764517,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 296
+      },
+      {
+        "x": 86.4,
+        "y": 81.0,
+        "pressure": 0.7276734,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 300
+      },
+      {
+        "x": 87.231995,
+        "y": 80.88,
+        "pressure": 0.7375747,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 304
+      },
+      {
+        "x": 88.064,
+        "y": 80.76,
+        "pressure": 0.7473451,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 308
+      },
+      {
+        "x": 88.896,
+        "y": 80.64,
+        "pressure": 0.7569805,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 312
+      },
+      {
+        "x": 89.728004,
+        "y": 80.52,
+        "pressure": 0.7664769,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 316
+      },
+      {
+        "x": 90.56,
+        "y": 80.4,
+        "pressure": 0.77583027,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 320
+      },
+      {
+        "x": 91.392,
+        "y": 80.28,
+        "pressure": 0.785037,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 324
+      },
+      {
+        "x": 92.224,
+        "y": 80.16,
+        "pressure": 0.79409325,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 328
+      },
+      {
+        "x": 93.056,
+        "y": 80.04,
+        "pressure": 0.8029951,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 332
+      },
+      {
+        "x": 93.888,
+        "y": 79.92,
+        "pressure": 0.8117391,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 336
+      },
+      {
+        "x": 94.72,
+        "y": 79.8,
+        "pressure": 0.82032174,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 340
+      },
+      {
+        "x": 95.552,
+        "y": 79.68,
+        "pressure": 0.82873935,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 344
+      },
+      {
+        "x": 96.383995,
+        "y": 79.56,
+        "pressure": 0.83698857,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 348
+      },
+      {
+        "x": 97.216,
+        "y": 79.44,
+        "pressure": 0.8450662,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 352
+      },
+      {
+        "x": 98.048004,
+        "y": 79.32,
+        "pressure": 0.85296875,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 356
+      },
+      {
+        "x": 98.880005,
+        "y": 79.2,
+        "pressure": 0.8606933,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 360
+      },
+      {
+        "x": 99.712,
+        "y": 79.08,
+        "pressure": 0.86823636,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 364
+      },
+      {
+        "x": 100.544,
+        "y": 78.96,
+        "pressure": 0.8755951,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 368
+      },
+      {
+        "x": 101.376,
+        "y": 78.84,
+        "pressure": 0.88276666,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 372
+      },
+      {
+        "x": 102.208,
+        "y": 78.72,
+        "pressure": 0.8897479,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 376
+      },
+      {
+        "x": 103.04,
+        "y": 78.6,
+        "pressure": 0.89653623,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 380
+      },
+      {
+        "x": 103.872,
+        "y": 78.479996,
+        "pressure": 0.90312886,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 384
+      },
+      {
+        "x": 104.704,
+        "y": 78.36,
+        "pressure": 0.9095231,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 388
+      },
+      {
+        "x": 105.535995,
+        "y": 78.24,
+        "pressure": 0.9157164,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 392
+      },
+      {
+        "x": 106.368,
+        "y": 78.12,
+        "pressure": 0.9217064,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 396
+      },
+      {
+        "x": 107.200005,
+        "y": 78.0,
+        "pressure": 0.9274906,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 400
+      },
+      {
+        "x": 108.032005,
+        "y": 77.88,
+        "pressure": 0.93306667,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 404
+      },
+      {
+        "x": 108.864,
+        "y": 77.76,
+        "pressure": 0.9384324,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 408
+      },
+      {
+        "x": 109.696,
+        "y": 77.64,
+        "pressure": 0.9435857,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 412
+      },
+      {
+        "x": 110.528,
+        "y": 77.52,
+        "pressure": 0.94852453,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 416
+      },
+      {
+        "x": 111.36,
+        "y": 77.4,
+        "pressure": 0.95324683,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 420
+      },
+      {
+        "x": 112.192,
+        "y": 77.28,
+        "pressure": 0.95775086,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 424
+      },
+      {
+        "x": 113.024,
+        "y": 77.16,
+        "pressure": 0.9620347,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 428
+      },
+      {
+        "x": 113.856,
+        "y": 77.04,
+        "pressure": 0.96609676,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 432
+      },
+      {
+        "x": 114.687996,
+        "y": 76.92,
+        "pressure": 0.9699353,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 436
+      },
+      {
+        "x": 115.52,
+        "y": 76.8,
+        "pressure": 0.97354895,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 440
+      },
+      {
+        "x": 116.352005,
+        "y": 76.68,
+        "pressure": 0.9769361,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 444
+      },
+      {
+        "x": 117.184006,
+        "y": 76.56,
+        "pressure": 0.9800956,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 448
+      },
+      {
+        "x": 118.016,
+        "y": 76.44,
+        "pressure": 0.983026,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 452
+      },
+      {
+        "x": 118.848,
+        "y": 76.32,
+        "pressure": 0.9857263,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 456
+      },
+      {
+        "x": 119.68,
+        "y": 76.2,
+        "pressure": 0.9881954,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 460
+      },
+      {
+        "x": 120.51199,
+        "y": 76.08,
+        "pressure": 0.99043226,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 464
+      },
+      {
+        "x": 121.344,
+        "y": 75.96,
+        "pressure": 0.9924361,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 468
+      },
+      {
+        "x": 122.176,
+        "y": 75.84,
+        "pressure": 0.9942061,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 472
+      },
+      {
+        "x": 123.008,
+        "y": 75.72,
+        "pressure": 0.99574137,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 476
+      },
+      {
+        "x": 123.84,
+        "y": 75.6,
+        "pressure": 0.9970416,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 480
+      },
+      {
+        "x": 124.672,
+        "y": 75.48,
+        "pressure": 0.99810606,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 484
+      },
+      {
+        "x": 125.504,
+        "y": 75.36,
+        "pressure": 0.9989344,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 488
+      },
+      {
+        "x": 126.336006,
+        "y": 75.24,
+        "pressure": 0.9995264,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 492
+      },
+      {
+        "x": 127.168,
+        "y": 75.12,
+        "pressure": 0.99988157,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 496
+      },
+      {
+        "x": 128.0,
+        "y": 75.0,
+        "pressure": 1.0,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 500
+      },
+      {
+        "x": 128.832,
+        "y": 74.88,
+        "pressure": 0.99988157,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 504
+      },
+      {
+        "x": 129.664,
+        "y": 74.76,
+        "pressure": 0.9995264,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 508
+      },
+      {
+        "x": 130.496,
+        "y": 74.64,
+        "pressure": 0.9989344,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 512
+      },
+      {
+        "x": 131.328,
+        "y": 74.520004,
+        "pressure": 0.99810606,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 516
+      },
+      {
+        "x": 132.16,
+        "y": 74.4,
+        "pressure": 0.9970416,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 520
+      },
+      {
+        "x": 132.992,
+        "y": 74.28,
+        "pressure": 0.99574137,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 524
+      },
+      {
+        "x": 133.824,
+        "y": 74.16,
+        "pressure": 0.9942061,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 528
+      },
+      {
+        "x": 134.656,
+        "y": 74.04,
+        "pressure": 0.9924361,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 532
+      },
+      {
+        "x": 135.488,
+        "y": 73.92,
+        "pressure": 0.99043226,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 536
+      },
+      {
+        "x": 136.32,
+        "y": 73.8,
+        "pressure": 0.98819536,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 540
+      },
+      {
+        "x": 137.15201,
+        "y": 73.68,
+        "pressure": 0.9857263,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 544
+      },
+      {
+        "x": 137.984,
+        "y": 73.56,
+        "pressure": 0.983026,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 548
+      },
+      {
+        "x": 138.816,
+        "y": 73.44,
+        "pressure": 0.9800955,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 552
+      },
+      {
+        "x": 139.648,
+        "y": 73.32,
+        "pressure": 0.97693604,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 556
+      },
+      {
+        "x": 140.48001,
+        "y": 73.2,
+        "pressure": 0.9735488,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 560
+      },
+      {
+        "x": 141.31201,
+        "y": 73.08,
+        "pressure": 0.9699353,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 564
+      },
+      {
+        "x": 142.14401,
+        "y": 72.96,
+        "pressure": 0.96609664,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 568
+      },
+      {
+        "x": 142.97601,
+        "y": 72.84,
+        "pressure": 0.9620346,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 572
+      },
+      {
+        "x": 143.808,
+        "y": 72.72,
+        "pressure": 0.95775086,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 576
+      },
+      {
+        "x": 144.64,
+        "y": 72.6,
+        "pressure": 0.95324683,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 580
+      },
+      {
+        "x": 145.472,
+        "y": 72.479996,
+        "pressure": 0.9485245,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 584
+      },
+      {
+        "x": 146.304,
+        "y": 72.36,
+        "pressure": 0.9435857,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 588
+      },
+      {
+        "x": 147.136,
+        "y": 72.24,
+        "pressure": 0.9384324,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 592
+      },
+      {
+        "x": 147.968,
+        "y": 72.119995,
+        "pressure": 0.93306655,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 596
+      },
+      {
+        "x": 148.8,
+        "y": 72.0,
+        "pressure": 0.9274905,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 600
+      },
+      {
+        "x": 149.63199,
+        "y": 71.880005,
+        "pressure": 0.9217064,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 604
+      },
+      {
+        "x": 150.46399,
+        "y": 71.76,
+        "pressure": 0.9157164,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 608
+      },
+      {
+        "x": 151.29599,
+        "y": 71.64,
+        "pressure": 0.909523,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 612
+      },
+      {
+        "x": 152.128,
+        "y": 71.520004,
+        "pressure": 0.9031288,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 616
+      },
+      {
+        "x": 152.96,
+        "y": 71.4,
+        "pressure": 0.8965361,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 620
+      },
+      {
+        "x": 153.792,
+        "y": 71.28,
+        "pressure": 0.8897479,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 624
+      },
+      {
+        "x": 154.62401,
+        "y": 71.16,
+        "pressure": 0.88276654,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 628
+      },
+      {
+        "x": 155.45601,
+        "y": 71.04,
+        "pressure": 0.87559503,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 632
+      },
+      {
+        "x": 156.288,
+        "y": 70.92,
+        "pressure": 0.86823624,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 636
+      },
+      {
+        "x": 157.12,
+        "y": 70.8,
+        "pressure": 0.8606931,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 640
+      },
+      {
+        "x": 157.952,
+        "y": 70.68,
+        "pressure": 0.85296875,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 644
+      },
+      {
+        "x": 158.784,
+        "y": 70.56,
+        "pressure": 0.8450662,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 648
+      },
+      {
+        "x": 159.616,
+        "y": 70.44,
+        "pressure": 0.83698857,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 652
+      },
+      {
+        "x": 160.448,
+        "y": 70.32,
+        "pressure": 0.82873917,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 656
+      },
+      {
+        "x": 161.28,
+        "y": 70.2,
+        "pressure": 0.82032156,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 660
+      },
+      {
+        "x": 162.112,
+        "y": 70.08,
+        "pressure": 0.811739,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 664
+      },
+      {
+        "x": 162.944,
+        "y": 69.96,
+        "pressure": 0.80299497,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 668
+      },
+      {
+        "x": 163.776,
+        "y": 69.84,
+        "pressure": 0.79409313,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 672
+      },
+      {
+        "x": 164.608,
+        "y": 69.72,
+        "pressure": 0.78503704,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 676
+      },
+      {
+        "x": 165.44,
+        "y": 69.6,
+        "pressure": 0.7758302,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 680
+      },
+      {
+        "x": 166.272,
+        "y": 69.479996,
+        "pressure": 0.76647675,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 684
+      },
+      {
+        "x": 167.104,
+        "y": 69.36,
+        "pressure": 0.7569804,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 688
+      },
+      {
+        "x": 167.93599,
+        "y": 69.240005,
+        "pressure": 0.7473451,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 692
+      },
+      {
+        "x": 168.76799,
+        "y": 69.12,
+        "pressure": 0.7375747,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 696
+      },
+      {
+        "x": 169.59999,
+        "y": 69.0,
+        "pressure": 0.72767335,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 700
+      },
+      {
+        "x": 170.432,
+        "y": 68.880005,
+        "pressure": 0.717645,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 704
+      },
+      {
+        "x": 171.264,
+        "y": 68.76,
+        "pressure": 0.7074941,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 708
+      },
+      {
+        "x": 172.09601,
+        "y": 68.64,
+        "pressure": 0.69722474,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 712
+      },
+      {
+        "x": 172.92801,
+        "y": 68.52,
+        "pressure": 0.68684125,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 716
+      },
+      {
+        "x": 173.76001,
+        "y": 68.4,
+        "pressure": 0.67634773,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 720
+      },
+      {
+        "x": 174.592,
+        "y": 68.28,
+        "pressure": 0.6657493,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 724
+      },
+      {
+        "x": 175.424,
+        "y": 68.16,
+        "pressure": 0.6550495,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 728
+      },
+      {
+        "x": 176.256,
+        "y": 68.04,
+        "pressure": 0.64425355,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 732
+      },
+      {
+        "x": 177.088,
+        "y": 67.92,
+        "pressure": 0.63336575,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 736
+      },
+      {
+        "x": 177.92,
+        "y": 67.8,
+        "pressure": 0.6223909,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 740
+      },
+      {
+        "x": 178.752,
+        "y": 67.68,
+        "pressure": 0.6113335,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 744
+      },
+      {
+        "x": 179.584,
+        "y": 67.56,
+        "pressure": 0.6001985,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 748
+      },
+      {
+        "x": 180.416,
+        "y": 67.44,
+        "pressure": 0.58899075,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 752
+      },
+      {
+        "x": 181.248,
+        "y": 67.32,
+        "pressure": 0.57771504,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 756
+      },
+      {
+        "x": 182.08,
+        "y": 67.2,
+        "pressure": 0.56637615,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 760
+      },
+      {
+        "x": 182.912,
+        "y": 67.08,
+        "pressure": 0.5549793,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 764
+      },
+      {
+        "x": 183.744,
+        "y": 66.96,
+        "pressure": 0.54352915,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 768
+      },
+      {
+        "x": 184.576,
+        "y": 66.84,
+        "pressure": 0.5320312,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 772
+      },
+      {
+        "x": 185.408,
+        "y": 66.72,
+        "pressure": 0.5204904,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 776
+      },
+      {
+        "x": 186.23999,
+        "y": 66.6,
+        "pressure": 0.50891185,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 780
+      },
+      {
+        "x": 187.07199,
+        "y": 66.48,
+        "pressure": 0.49730092,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 784
+      },
+      {
+        "x": 187.90399,
+        "y": 66.36,
+        "pressure": 0.48566273,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 788
+      },
+      {
+        "x": 188.736,
+        "y": 66.24,
+        "pressure": 0.47400242,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 792
+      },
+      {
+        "x": 189.568,
+        "y": 66.119995,
+        "pressure": 0.46232587,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 796
+      },
+      {
+        "x": 190.40001,
+        "y": 66.0,
+        "pressure": 0.45063815,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 800
+      },
+      {
+        "x": 191.23201,
+        "y": 65.88,
+        "pressure": 0.43894488,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 804
+      },
+      {
+        "x": 192.06401,
+        "y": 65.759995,
+        "pressure": 0.42725125,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 808
+      },
+      {
+        "x": 192.896,
+        "y": 65.64,
+        "pressure": 0.41556343,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 812
+      },
+      {
+        "x": 193.728,
+        "y": 65.520004,
+        "pressure": 0.40388632,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 816
+      },
+      {
+        "x": 194.56,
+        "y": 65.4,
+        "pressure": 0.3922261,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 820
+      },
+      {
+        "x": 195.392,
+        "y": 65.28,
+        "pressure": 0.38058838,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 824
+      },
+      {
+        "x": 196.224,
+        "y": 65.16,
+        "pressure": 0.36897886,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 828
+      },
+      {
+        "x": 197.056,
+        "y": 65.04,
+        "pressure": 0.35740313,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 832
+      },
+      {
+        "x": 197.888,
+        "y": 64.92,
+        "pressure": 0.34586754,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 836
+      },
+      {
+        "x": 198.72,
+        "y": 64.8,
+        "pressure": 0.33437797,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 840
+      },
+      {
+        "x": 199.552,
+        "y": 64.68,
+        "pressure": 0.32293987,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 844
+      },
+      {
+        "x": 200.384,
+        "y": 64.56,
+        "pressure": 0.31155983,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 848
+      },
+      {
+        "x": 201.216,
+        "y": 64.44,
+        "pressure": 0.30024377,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 852
+      },
+      {
+        "x": 202.048,
+        "y": 64.32,
+        "pressure": 0.28899777,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 856
+      },
+      {
+        "x": 202.88,
+        "y": 64.2,
+        "pressure": 0.27782837,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 860
+      },
+      {
+        "x": 203.712,
+        "y": 64.08,
+        "pressure": 0.2667418,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 864
+      },
+      {
+        "x": 204.54399,
+        "y": 63.96,
+        "pressure": 0.25574446,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 868
+      },
+      {
+        "x": 205.37599,
+        "y": 63.84,
+        "pressure": 0.24484283,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 872
+      },
+      {
+        "x": 206.208,
+        "y": 63.72,
+        "pressure": 0.23404354,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 876
+      },
+      {
+        "x": 207.04,
+        "y": 63.6,
+        "pressure": 0.22335306,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 880
+      },
+      {
+        "x": 207.872,
+        "y": 63.48,
+        "pressure": 0.21277864,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 884
+      },
+      {
+        "x": 208.70401,
+        "y": 63.36,
+        "pressure": 0.20232703,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 888
+      },
+      {
+        "x": 209.53601,
+        "y": 63.239998,
+        "pressure": 0.19200526,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 892
+      },
+      {
+        "x": 210.36801,
+        "y": 63.12,
+        "pressure": 0.18182041,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 896
+      },
+      {
+        "x": 211.2,
+        "y": 63.0,
+        "pressure": 0.1717804,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 900
+      },
+      {
+        "x": 212.032,
+        "y": 62.88,
+        "pressure": 0.16189224,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 904
+      },
+      {
+        "x": 212.864,
+        "y": 62.760002,
+        "pressure": 0.15216371,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 908
+      },
+      {
+        "x": 213.696,
+        "y": 62.64,
+        "pressure": 0.14260314,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 912
+      },
+      {
+        "x": 214.528,
+        "y": 62.52,
+        "pressure": 0.13321865,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 916
+      },
+      {
+        "x": 215.36,
+        "y": 62.4,
+        "pressure": 0.124018535,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 920
+      },
+      {
+        "x": 216.192,
+        "y": 62.28,
+        "pressure": 0.11501208,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 924
+      },
+      {
+        "x": 217.02399,
+        "y": 62.16,
+        "pressure": 0.1062085,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 928
+      },
+      {
+        "x": 217.856,
+        "y": 62.04,
+        "pressure": 0.09761698,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 932
+      },
+      {
+        "x": 218.688,
+        "y": 61.92,
+        "pressure": 0.0892482,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 936
+      },
+      {
+        "x": 219.52,
+        "y": 61.8,
+        "pressure": 0.081112795,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 940
+      },
+      {
+        "x": 220.352,
+        "y": 61.68,
+        "pressure": 0.07322209,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 944
+      },
+      {
+        "x": 221.184,
+        "y": 61.559998,
+        "pressure": 0.065588705,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 948
+      },
+      {
+        "x": 222.016,
+        "y": 61.44,
+        "pressure": 0.05822579,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 952
+      },
+      {
+        "x": 222.84799,
+        "y": 61.32,
+        "pressure": 0.051147874,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 956
+      },
+      {
+        "x": 223.68,
+        "y": 61.2,
+        "pressure": 0.044371,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 960
+      },
+      {
+        "x": 224.512,
+        "y": 61.08,
+        "pressure": 0.037913095,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 964
+      },
+      {
+        "x": 225.344,
+        "y": 60.96,
+        "pressure": 0.031794533,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 968
+      },
+      {
+        "x": 226.176,
+        "y": 60.84,
+        "pressure": 0.026038768,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 972
+      },
+      {
+        "x": 227.008,
+        "y": 60.72,
+        "pressure": 0.02067395,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 976
+      },
+      {
+        "x": 227.84,
+        "y": 60.6,
+        "pressure": 0.015734049,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 980
+      },
+      {
+        "x": 228.67201,
+        "y": 60.48,
+        "pressure": 0.0112622995,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 984
+      },
+      {
+        "x": 229.504,
+        "y": 60.36,
+        "pressure": 0.007317164,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 988
+      },
+      {
+        "x": 230.336,
+        "y": 60.239998,
+        "pressure": 0.003983758,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 992
+      },
+      {
+        "x": 231.168,
+        "y": 60.120003,
+        "pressure": 0.0014086105,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 996
+      },
+      {
+        "x": 232.0,
+        "y": 60.0,
+        "pressure": 0.0,
+        "tilt_x": 0.0,
+        "tilt_y": 0.0,
+        "rotation": 0.0,
+        "time_ms": 1000
+      }
+    ]
+  ]
+}

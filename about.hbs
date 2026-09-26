@@ -1,0 +1,27 @@
+{{!-- SPDX-FileCopyrightText: 2026 Hakoniwa --}}
+{{!-- SPDX-License-Identifier: MPL-2.0 --}}
+# Third-Party Notices
+
+This document lists licenses for Rust dependencies distributed with Efude.
+
+## License overview
+
+{{#each overview}}
+- {{name}} ({{count}} crates)
+{{/each}}
+
+## Dependency license texts
+
+{{#each licenses}}
+## {{name}}
+
+Used by:
+{{#each used_by}}
+- {{crate.name}} {{crate.version}}
+{{/each}}
+
+```
+{{text}}
+```
+
+{{/each}}

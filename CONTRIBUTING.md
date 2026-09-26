@@ -1,0 +1,91 @@
+<!-- SPDX-FileCopyrightText: 2026 Hakoniwa -->
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+
+# Efude への参加 / Contributing
+
+## 1. 受け付けているもの
+
+- **不具合報告と要望は Issue で歓迎します。** 「新しい Issue」から「不具合報告」か「要望」のフォームを選んでください。先に同じ内容がないか検索してください。
+- **コードの提供(プルリクエスト)は、現在は招待した協力者からのみ受け付けています。** Efude は他のソフトの内部を見ずに挙動の観察だけで作るルール(下の 2.1)と、ライセンスの管理を守る必要があるためです。直したい点や作りたい機能があれば、まず Issue で相談してください。話し合いの結果、協力者としてお招きすることがあります。
+- 他のソフトのファイル(独自形式のキャンバスやブラシなど)や内部情報は、Issue にも添付しないでください。
+- セキュリティ上の問題は公開の Issue ではなく、リポジトリの Security タブ(「Report a vulnerability」)から非公開で知らせてください。
+
+### In English
+
+- **Bug reports and feature requests are welcome as issues.** Choose the "Bug report" or "Feature request" form, after searching for an existing issue.
+- **Pull requests are currently accepted from invited collaborators only.** Efude is built from observed behavior only (clean room, section 2.1) and its licensing must stay clean. If you want to fix or add something, open an issue first; collaborators may be invited from those discussions.
+- Do not attach files in other software's proprietary formats, or internal details of other software, even to issues.
+- Report security problems privately from the Security tab ("Report a vulnerability"), not in a public issue.
+
+## 2. 権利ルール(必須遵守)
+
+Efudeのコード、アセット、ドキュメントは、すべて自分たちで書いたものか、本プロジェクトのライセンス(MIT OR Apache-2.0、MPL-2.0)と両立するライセンスのものに限ります。この章はリポジトリの `docs/CLEAN_ROOM.md` と `CONTRIBUTING.md` にそのまま転記します。
+
+### 2.1 クリーンルーム方式
+
+| 役割 | やること | やってはいけないこと |
+| --- | --- | --- |
+| 調査担当(仕様書き) | 市販ソフトを通常の利用範囲で操作し、観察した挙動を仕様書に書く(入力、出力、数値の範囲、UI上の振る舞い) | 逆アセンブル、デバッガ接続、メモリダンプ、設定ファイルやバイナリの解析、リーク情報の閲覧 |
+| 実装担当 | 仕様書だけを見て実装する | 市販ソフトの内部情報を見ること、調査担当から仕様書以外の情報を受け取ること |
+| レビュー担当 | 仕様書が観察事実だけで書かれているかを確認する | — |
+
+- 仕様書は `docs/spec/` に置き、観察日、観察者、観察方法を記録します。
+- 1人で開発する時期も、観察記録を残してから実装する順序を守ります。
+- 競合ソフトの利用規約で禁止されている行為(リバースエンジニアリングの禁止条項など)はしません。
+
+### 2.2 コードの出自
+
+- GPL、LGPL、AGPL、CC-BY-SA、SSPL、その他コピーレフトのコードは、依存としても、コピペとしても、参考写経としても入れません。
+- 許可するライセンスはApache-2.0、MIT、BSD-2/3-Clause、ISC、Zlib、Unicode-3.0、CC0-1.0、Unlicenseです(追加するときはIssueで合意を取ります)。他者のMPL-2.0のコードは、エンジンのクレートには入れません。
+- Stack Overflowやブログのコード(CC-BY-SA)は写しません。アイデアとして読むだけにします。
+- AI生成コードは、出力を人間がレビューしたうえでコミットします。明らかに既存コードの複製と疑われるものは採用しません。
+
+### 2.3 依存ライセンスの自動チェック(CI)
+
+- Rustの依存: `cargo-deny` の `licenses` で許可リスト方式をとり、`bans` で重複と既知の問題を検出します。
+- シェーダーやスクリプトの付属物: `reuse lint`(REUSE仕様)で全ファイルにSPDXヘッダーがあるかを確認します。
+- 同梱物の一覧(`THIRD_PARTY_NOTICES`)は `cargo-about` で自動生成します。
+- PRがどれか1つでも違反したら、マージできない設定にします。
+
+### 2.4 名称・表記
+
+- 配布物(バイナリ、UI文字列、ブラシ名、ヘルプ、公式サイト、リリースノート)には、他社の製品名や商標を一切入れません。
+- 「〇〇風」「〇〇互換」という表現も配布物には使いません。比較のための言及は開発者向けの内部メモに限ります。
+- UIのレイアウト、アイコン、配色は独自に設計し、特定製品の外観を再現しません。
+
+### 2.5 ファイル形式
+
+- 読み書きするのは .efude と .psd(Adobe公開仕様に基づく)だけです。PNG/JPEGの書き出しは別途扱います。
+- 他社独自のファイル形式(ペイントソフト独自のキャンバス形式、ブラシ定義、ブラシセット)の読み込みは実装しません。PRで提案されても受け付けません。
+
+### 2.6 ライセンスと権利処理
+
+- 著作権者はHakoniwaとし、GitHubの個人アカウント(852wa)で公開します。
+- ライセンスはクレートごとに分けます。
+  - エンジンのクレート(`efude-core`、`efude-input`、`efude-stroke`、`efude-brush`、`efude-canvas`、`efude-gpu`、`efude-io`、`efude-comic`、それらをまとめた `efude`): **MIT OR Apache-2.0**
+  - アプリ本体のクレート(`efude-ui`、`efude-app`): **MPL-2.0**
+- MPL-2.0の意味: アプリ本体のファイルを改変して配布する人は、改変したファイルのソースを公開する義務を負います。エンジンのクレートは、誰でも自由に自分のソフトに組み込めます。
+- 依存の向きは常に「アプリ本体 → エンジン」とし、エンジンのクレートはアプリ本体のクレートに依存しません。CIで確認します。
+- 各クレートの `Cargo.toml` の `license` フィールドと、各ファイルのSPDXヘッダーを一致させます。`reuse lint` で確認します。
+- すべてのコミットに `Signed-off-by:` を必須とします(DCO 1.1)。CI で各コミットの作者と署名が一致するかを検証します。
+- CLAは導入しません。貢献者の著作権は各自に残り、貢献先のクレートのライセンスで提供されます。
+- ライセンスの変更には、あとから全貢献者の同意が必要になります。そのため、最初の公開前に確定させます。
+- ルート直下に `LICENSE-MIT`、`LICENSE-APACHE`、`LICENSE-MPL` と `NOTICE`(Copyright 2026 Hakoniwa)を置きます。
+- 「Efude」の名称とロゴの利用ルールは `TRADEMARKS.md` で示します。コードのライセンスには、名称の使用許諾は含まれません。
+
+### 2.7 アセット
+
+- アイコン、フォント、紙テクスチャ、ブラシ先端、グレイン画像、サンプル作品は、すべて自作します。
+- 自作アセットには、作成者、作成日、制作手段(使用ソフト、写真撮影なら撮影対象)を `assets/PROVENANCE.md` に記録します。
+- AI画像生成で作ったものは、学習データの権利が不確かなため使いません。
+- UIフォントは自作するまでの間、OSのシステムフォントを参照するだけにし、フォントファイルは同梱しません。
+
+## Contributions
+
+PRs should state their purpose and link an observation-based spec when applicable. Contributors who have seen proprietary internals must not implement the related area. Follow the project code style and add an ADR under `docs/adr/` for large design changes.
+
+Brush output is guarded by a regression test that replays input logs through every built-in brush and compares the result with reference images (`crates/efude-ui/tests/golden/`). If a change to brush feel is intended, regenerate the images with `EFUDE_BLESS=1 cargo test -p efude-ui golden`, look at them, and commit them with the change. On a failure the new images and difference maps are written to `target/golden-out/`. Real tablet strokes can be added by saving an input log in the app ("Save Input Log", which keeps the last 128 strokes) into `crates/efude-ui/tests/golden/logs/`.
+
+All project spaces follow the [Efude community code of conduct](CODE_OF_CONDUCT.md). Reports should go to the project owner through a private GitHub contact channel rather than a public issue.
+
+Sign every commit off with DCO 1.1 (`git commit -s`). No CLA is used.

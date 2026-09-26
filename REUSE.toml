@@ -1,0 +1,70 @@
+version = 1
+SPDX-PackageName = "Efude"
+SPDX-PackageSupplier = "Person: Hakoniwa"
+SPDX-PackageDownloadLocation = "*"
+
+[[annotations]]
+path = ["*.md", "docs/**", ".github/**", "*.yml", "*.json", "deny.toml", "rust-toolchain.toml", "REUSE.toml", "NOTICE", ".gitignore", ".gitattributes"]
+SPDX-FileCopyrightText = "2026 Hakoniwa"
+SPDX-License-Identifier = "MPL-2.0"
+
+[[annotations]]
+path = "Cargo.toml"
+SPDX-FileCopyrightText = "2026 Hakoniwa"
+SPDX-License-Identifier = "MPL-2.0"
+
+[[annotations]]
+path = [
+  "crates/efude-core/Cargo.toml",
+  "crates/efude-input/Cargo.toml",
+  "crates/efude-stroke/Cargo.toml",
+  "crates/efude-brush/Cargo.toml",
+  "crates/efude-canvas/Cargo.toml",
+  "crates/efude-gpu/Cargo.toml",
+  "crates/efude-io/Cargo.toml",
+  "crates/efude-comic/Cargo.toml",
+  "crates/efude/Cargo.toml",
+  "crates/efude/README.md",
+]
+SPDX-FileCopyrightText = "2026 Hakoniwa"
+SPDX-License-Identifier = "MIT OR Apache-2.0"
+
+[[annotations]]
+path = ["about.toml", "about.hbs"]
+SPDX-FileCopyrightText = "2026 Hakoniwa"
+SPDX-License-Identifier = "MPL-2.0"
+
+[[annotations]]
+path = ["crates/efude-ui/Cargo.toml", "crates/efude-app/Cargo.toml"]
+SPDX-FileCopyrightText = "2026 Hakoniwa"
+SPDX-License-Identifier = "MPL-2.0"
+
+[[annotations]]
+path = "Cargo.lock"
+SPDX-FileCopyrightText = "NONE"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "vendor/eframe-0.31.1/**"
+SPDX-FileCopyrightText = "2018-2021 Emil Ernerfeldt"
+SPDX-License-Identifier = "Apache-2.0 OR MIT"
+
+[[annotations]]
+path = ["assets/Efude.png", "assets/Efude_sub.png", "assets/Efude_sub_1.png", "assets/efude.ico", "assets/grains/*.png", "assets/loading.gif", "assets/brushes/*.efudebrushes"]
+SPDX-FileCopyrightText = "2026 Hakoniwa"
+SPDX-License-Identifier = "MPL-2.0"
+
+[[annotations]]
+path = "assets/PROVENANCE.md"
+SPDX-FileCopyrightText = "2026 Hakoniwa"
+SPDX-License-Identifier = "MPL-2.0"
+
+[[annotations]]
+path = "crates/efude-app/wix/main.wxs"
+SPDX-FileCopyrightText = "2017 Christopher R. Field and 2026 Hakoniwa"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = "crates/efude-ui/tests/golden/**"
+SPDX-FileCopyrightText = "2026 Hakoniwa"
+SPDX-License-Identifier = "MPL-2.0"

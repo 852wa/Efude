@@ -1,0 +1,21 @@
+# Build output
+/target/
+
+# Generated at release time by cargo-about
+/THIRD_PARTY_NOTICES.txt
+/Efude-portable.zip
+
+# Editor and OS files
+.vs/
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Personal push and release helpers
+/push.bat
+/release.bat
+/squash-history.bat
+/SOURCE.txt

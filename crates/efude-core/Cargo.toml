@@ -1,0 +1,17 @@
+[package]
+name = "efude-core"
+version.workspace = true
+edition.workspace = true
+license = "MIT OR Apache-2.0"
+description = "Core types of the Efude painting app: ink points and shared geometry."
+repository.workspace = true
+homepage.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+keywords = ["painting", "drawing", "graphics"]
+categories = ["graphics", "multimedia::images"]
+[dependencies]
+glam.workspace = true
+
+[lints]
+workspace = true

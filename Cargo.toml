@@ -1,0 +1,54 @@
+[workspace]
+resolver = "2"
+members = ["crates/efude", "crates/efude-core", "crates/efude-input", "crates/efude-stroke", "crates/efude-brush", "crates/efude-canvas", "crates/efude-gpu", "crates/efude-io", "crates/efude-comic", "crates/efude-ui", "crates/efude-app"]
+# The vendored eframe is a patched dependency, not part of the project:
+# it is not linted, formatted or tested with the workspace.
+exclude = ["vendor/eframe-0.31.1"]
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["Hakoniwa"]
+repository = "https://github.com/852wa/Efude"
+homepage = "https://github.com/852wa/Efude"
+rust-version = "1.95"
+[workspace.dependencies]
+glam = "0.30"
+wgpu = "24.0.5"
+crossbeam-queue = "0.3"
+lz4_flex = "0.11"
+windows = { version = "0.58", features = ["Win32_Foundation", "Win32_Graphics_Gdi", "Win32_System_DataExchange", "Win32_System_Memory", "Win32_UI_Shell", "Win32_UI_HiDpi", "Win32_UI_Input_KeyboardAndMouse", "Win32_UI_Input_Pointer", "Win32_UI_WindowsAndMessaging"] }
+serde = { version = "1", features = ["derive", "rc"] }
+serde_json = "1"
+postcard = { version = "1.1", features = ["alloc", "use-std"] }
+half = "2.7"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+png = "0.18"
+tempfile = "3"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "bmp", "gif"] }
+efude-core = { path = "crates/efude-core", version = "0.1.0" }
+efude-input = { path = "crates/efude-input", version = "0.1.0" }
+efude-stroke = { path = "crates/efude-stroke", version = "0.1.0" }
+efude-brush = { path = "crates/efude-brush", version = "0.1.0" }
+efude-canvas = { path = "crates/efude-canvas", version = "0.1.0" }
+efude-gpu = { path = "crates/efude-gpu", version = "0.1.0" }
+efude-io = { path = "crates/efude-io", version = "0.1.0" }
+efude-comic = { path = "crates/efude-comic", version = "0.1.0" }
+efude-ui = { path = "crates/efude-ui", version = "0.1.0" }
+efude = { path = "crates/efude", version = "0.1.0" }
+[workspace.lints.rust]
+unsafe_code = "deny"
+
+# Brush regression tests replay whole strokes; the painting crates are
+# optimized in tests so they run in seconds (the rest stays fast to build).
+[profile.test.package.efude-brush]
+opt-level = 2
+[profile.test.package.efude-canvas]
+opt-level = 2
+[profile.test.package.efude-comic]
+opt-level = 2
+[profile.test.package.efude-stroke]
+opt-level = 2
+[profile.test.package.half]
+opt-level = 2
+[profile.test.package.glam]
+opt-level = 2

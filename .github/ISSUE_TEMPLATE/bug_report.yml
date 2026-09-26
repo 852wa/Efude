@@ -1,0 +1,70 @@
+# SPDX-FileCopyrightText: 2026 Hakoniwa
+# SPDX-License-Identifier: MPL-2.0
+name: 不具合報告 / Bug report
+description: 動かない・おかしいことを報告する / Something does not work as it should
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        報告ありがとうございます。同じ内容の Issue がないか、先に検索してください。
+        Thank you for reporting. Please search the existing issues first.
+  - type: input
+    id: version
+    attributes:
+      label: Efude のバージョン / Efude version
+      description: ヘルプ、またはダウンロードしたファイル名で確認できます / See Help or the name of the file you downloaded
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows のバージョン / Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: dropdown
+    id: input
+    attributes:
+      label: 入力方法 / Input
+      description: 環境設定の「タブレット入力」 / "Tablet Input" in Preferences
+      options:
+        - Windows Ink
+        - WinTab
+        - ウィンドウ入力 / Window input
+        - マウスのみ / Mouse only
+    validations:
+      required: true
+  - type: input
+    id: tablet
+    attributes:
+      label: ペンタブレットの機種 / Pen tablet model
+      placeholder: 例 / e.g. Wacom Intuos Pro, XP-Pen Deco
+  - type: textarea
+    id: what
+    attributes:
+      label: 起きたこと / What happened
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順 / Steps to reproduce
+      placeholder: |
+        1. 新規キャンバス（A4・350dpi）を作る / Create a new canvas (A4, 350 dpi)
+        2. 「ペン」で線を描く / Draw with the Pen brush
+        3. …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した動き / What you expected
+  - type: textarea
+    id: files
+    attributes:
+      label: スクリーンショット・ファイル / Screenshots or files
+      description: |
+        画像や .efude ファイルをここにドラッグできます。他のソフトのファイルや内部情報は添付しないでください。
+        Drag images or .efude files here. Please do not attach files or internal details from other software.

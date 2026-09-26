@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Efude brush bundle metadata",
+  "description": "Schema for brush.json inside an .efudebrush ZIP. Optional tip.png and grain.png entries contain grayscale coverage maps, each limited to 4096 pixels per side and 16 million pixels total.",
+  "type": "object",
+  "required": ["version", "brush"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {"const": 1},
+    "brush": {
+      "type": "object",
+      "required": ["name", "kind", "size", "opacity", "spacing", "stabilization", "color"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string"},
+        "kind": {"enum": ["pen", "pencil", "brush", "watercolor", "airbrush", "blur", "smudge", "eraser"]},
+        "size": {"type": "number", "exclusiveMinimum": 0},
+        "opacity": {"type": "number", "minimum": 0, "maximum": 1},
+        "spacing": {"type": "number", "minimum": 0.005, "maximum": 2},
+        "stabilization": {"type": "integer", "minimum": 0, "maximum": 15},
+        "pull_distance": {"type": "number", "minimum": 0, "maximum": 256},
+        "speed_stabilization": {"type": "number", "minimum": 0, "maximum": 1},
+        "pressure_curve": {"type": "number", "minimum": 0.2, "maximum": 3},
+        "pressure_curve_x1": {"type": "number", "minimum": 0, "maximum": 1},
+        "pressure_curve_y1": {"type": "number", "minimum": 0, "maximum": 1},
+        "pressure_curve_x2": {"type": "number", "minimum": 0, "maximum": 1},
+        "pressure_curve_y2": {"type": "number", "minimum": 0, "maximum": 1},
+        "taper_start": {"type": "number", "minimum": 0, "maximum": 512},
+        "taper_end": {"type": "number", "minimum": 0, "maximum": 512},
+        "taper_in_pixels": {"type": "boolean"},
+        "taper_min": {"type": "number", "minimum": 0.01, "maximum": 1},
+        "speed_size": {"type": "number", "minimum": -1, "maximum": 1},
+        "speed_opacity": {"type": "number", "minimum": -1, "maximum": 1},
+        "tilt_size": {"type": "number", "minimum": -1, "maximum": 1},
+        "tilt_opacity": {"type": "number", "minimum": -1, "maximum": 1},
+        "tilt_flattening": {"type": "number", "minimum": 0, "maximum": 0.9},
+        "tilt_rotation": {"type": "number", "minimum": 0, "maximum": 1},
+        "size_source": {"$ref": "#/$defs/dynamicSource"},
+        "opacity_source": {"$ref": "#/$defs/dynamicSource"},
+        "concentration_source": {"$ref": "#/$defs/dynamicSource"},
+        "mix_source": {"$ref": "#/$defs/dynamicSource"},
+        "dilution_source": {"$ref": "#/$defs/dynamicSource"},
+        "size_min": {"type": "number", "minimum": 0, "maximum": 1},
+        "opacity_min": {"type": "number", "minimum": 0, "maximum": 1},
+        "concentration_min": {"type": "number", "minimum": 0, "maximum": 1},
+        "mix_min": {"type": "number", "minimum": 0, "maximum": 1},
+        "dilution_min": {"type": "number", "minimum": 0, "maximum": 1},
+        "hardness": {"type": "number", "minimum": 0, "maximum": 1},
+        "grain": {"type": "number", "minimum": 0, "maximum": 1},
+        "grain_scale": {"type": "number", "minimum": 0.05, "maximum": 8},
+        "grain_fixed": {"type": "boolean"},
+        "grain_random_rotation": {"type": "boolean", "default": false, "description": "With grain_fixed: turn the grain by a new random angle for every stroke."},
+        "tip": {"type": "null", "description": "Texture data is stored in the optional tip.png ZIP entry."},
+        "grain_tip": {"type": "null", "description": "Texture data is stored in the optional grain.png ZIP entry."},
+        "grain_source": {"type": "null", "description": "The grain image as loaded is stored in the optional grain_source.png ZIP entry."},
+        "grain_invert": {"type": "boolean", "default": false, "description": "Swap the painted and unpainted parts of the grain."},
+        "grain_binary": {"type": "boolean", "default": false, "description": "Paint only where the grain is marked, at full strength."},
+        "settle": {"type": "boolean", "default": true, "description": "Reshape the line after drawing (tip preview, end taper, wet edge at pen-up)."},
+        "wet_edge_on": {"type": "boolean", "default": true, "description": "Apply wet_edge at pen-up."},
+        "antialias": {"type": "integer", "minimum": 0, "maximum": 3, "default": 2, "description": "Anti-aliasing of the dab edge: 0 none, 1 light, 2 normal, 3 strong."},
+        "tip_aspect": {"type": "number", "exclusiveMinimum": 0, "maximum": 10},
+        "tip_rotation": {"type": "number", "minimum": -180, "maximum": 180},
+        "scatter": {"type": "number", "minimum": 0, "maximum": 2},
+        "mix": {"type": "object", "additionalProperties": false, "properties": {
+          "blend": {"type": "number", "minimum": 0, "maximum": 1},
+          "dilution": {"type": "number", "minimum": 0, "maximum": 1},
+          "persistence": {"type": "number", "minimum": 0, "maximum": 1},
+          "charge": {"type": "number", "minimum": 0, "maximum": 1},
+          "sample_range": {"enum": ["center", "average"]},
+          "reference_target": {
+            "oneOf": [
+              {"enum": ["current_layer", "below_selected", "visible_layers"]},
+              {
+                "type": "object",
+                "required": ["layer"],
+                "additionalProperties": false,
+                "properties": {"layer": {"type": "integer", "minimum": 0}}
+              }
+            ]
+          },
+          "sample_radius": {"type": "number", "minimum": 0, "maximum": 64}
+        }},
+        "wet_edge": {"type": "number", "minimum": 0, "maximum": 1, "default": 0, "description": "Pigment gathered along the rim of a wet stroke at pen-up (mixing brushes only)."},
+        "wet_edge_width": {"type": "number", "minimum": 1, "maximum": 64, "default": 6, "description": "Width of the wet rim in document pixels."},
+        "bleed": {"enum": ["airy", "balanced", "dense"], "default": "balanced", "description": "How much transparency under a wet brush thins its paint, and how much existing paint it lifts."},
+        "color": {"type": "array", "items": {"type": "integer", "minimum": 0, "maximum": 255}, "minItems": 4, "maxItems": 4}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"taper_in_pixels": {"const": true}}, "required": ["taper_in_pixels"]},
+          "then": {
+            "properties": {
+              "taper_start": {"maximum": 512},
+              "taper_end": {"maximum": 512}
+            }
+          },
+          "else": {
+            "properties": {
+              "taper_start": {"maximum": 0.5},
+              "taper_end": {"maximum": 0.5}
+            }
+          }
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "dynamicSource": {
+      "enum": ["none", "pressure", "speed", "tilt", "direction", "random"]
+    }
+  }
+}

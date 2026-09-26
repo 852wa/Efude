@@ -1,0 +1,23 @@
+[package]
+name = "efude-input"
+version.workspace = true
+edition.workspace = true
+license = "MIT OR Apache-2.0"
+description = "Pen and tablet input for the Efude painting app: pressure, tilt, Windows Ink and WinTab samples, stroke logs."
+repository.workspace = true
+homepage.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+keywords = ["painting", "drawing", "tablet", "pen", "pressure"]
+categories = ["graphics", "gui"]
+[dependencies]
+efude-core.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+glam.workspace = true
+crossbeam-queue.workspace = true
+[target.'cfg(target_os = "windows")'.dependencies]
+windows.workspace = true
+
+[lints]
+workspace = true

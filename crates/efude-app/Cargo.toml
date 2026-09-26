@@ -1,0 +1,20 @@
+[package]
+name = "efude-app"
+version.workspace = true
+edition.workspace = true
+license = "MPL-2.0"
+publish = false
+[[bin]]
+name = "efude"
+path = "src/main.rs"
+[dependencies]
+efude-ui.workspace = true
+eframe = { path = "../../vendor/eframe-0.31.1", default-features = false, features = ["wgpu", "persistence", "x11", "wayland"] }
+egui-wgpu = { version = "0.31", default-features = false }
+wgpu.workspace = true
+
+[build-dependencies]
+winresource = { version = "0.1", default-features = false }
+
+[lints]
+workspace = true

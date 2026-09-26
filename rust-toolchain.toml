@@ -1,0 +1,5 @@
+# The compiler used for development, CI and releases. Pinned so a new
+# Rust release (with new lints) cannot break a build; raise it on purpose.
+[toolchain]
+channel = "1.95.0"
+components = ["rustfmt", "clippy"]

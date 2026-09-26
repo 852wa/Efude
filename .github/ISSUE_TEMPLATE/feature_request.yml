@@ -1,0 +1,27 @@
+# SPDX-FileCopyrightText: 2026 Hakoniwa
+# SPDX-License-Identifier: MPL-2.0
+name: 要望 / Feature request
+description: 欲しい機能や改善を提案する / Suggest a feature or an improvement
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Efude は他のソフトの中身を見ずに、挙動だけから独自に作っています。要望は「何をしたいか」「どう動いてほしいか」で書いてください。他のソフトのファイルや内部情報は添付しないでください。
+        Efude is built independently, from observed behavior only. Describe what you want to do and how it should behave; please do not attach files or internal details from other software.
+  - type: textarea
+    id: goal
+    attributes:
+      label: したいこと / What you want to do
+      description: どんな作業で困っていて、何ができるとよいか / What are you working on, and what should be possible?
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 期待する動き / How it should behave
+      description: 操作の流れ、画面、数値の範囲など / Steps, screens, value ranges…
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 今の回避方法 / Current workaround

@@ -1,0 +1,35 @@
+[package]
+name = "efude-ui"
+version.workspace = true
+edition.workspace = true
+license = "MPL-2.0"
+publish = false
+[dependencies]
+efude-canvas.workspace = true
+efude-brush.workspace = true
+efude-stroke.workspace = true
+efude-core.workspace = true
+glam.workspace = true
+efude-input.workspace = true
+efude-io.workspace = true
+efude-gpu.workspace = true
+efude-comic.workspace = true
+eframe = { path = "../../vendor/eframe-0.31.1", default-features = false, features = ["wgpu", "persistence"] }
+serde.workspace = true
+serde_json.workspace = true
+rfd = "0.15"
+image.workspace = true
+raw-window-handle = "0.6"
+pollster = "0.4"
+wgpu.workspace = true
+egui_dock = { version = "0.16", features = ["serde"] }
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[[bench]]
+name = "pipeline"
+harness = false
+
+[lints]
+workspace = true

@@ -1,0 +1,208 @@
+name: CI
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  # License and sign-off checks run in containers, which need Linux.
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: fsfe/reuse-action@v5
+      - name: Check DCO sign-off
+        shell: bash
+        env:
+          BEFORE: ${{ github.event.before }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          set -euo pipefail
+          # New commits only; a new branch, a tag or rewritten history checks
+          # everything reachable.
+          if [ -n "${BASE:-}" ]; then
+            range="$BASE..$HEAD_SHA"
+          elif [ -n "${BEFORE:-}" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ] \
+               && git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            range="$BEFORE..$HEAD_SHA"
+          else
+            range="$HEAD_SHA"
+          fi
+          missing=0
+          for commit in $(git rev-list --no-merges "$range"); do
+            author="$(git log -1 --format='%an <%ae>' "$commit")"
+            if ! git log -1 --format=%B "$commit" | grep -qiF "Signed-off-by: $author"; then
+              echo "::error::Commit $commit has no 'Signed-off-by: $author' line"
+              missing=1
+            fi
+          done
+          exit "$missing"
+  windows:
+    needs: checks
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.95.0
+        with:
+          components: rustfmt, clippy
+      - uses: taiki-e/install-action@cargo-deny
+      - uses: taiki-e/install-action@cargo-about
+      - run: cargo install cargo-wix --locked --version 0.3.9
+      - run: cargo fmt --all -- --check
+      - name: Check crate dependency direction
+        shell: pwsh
+        run: |
+          $metadata = cargo metadata --no-deps --format-version 1 | ConvertFrom-Json
+          $allowedEngineDependencies = @{
+            'efude-core' = @()
+            'efude-input' = @('efude-core')
+            'efude-stroke' = @('efude-core')
+            'efude-brush' = @('efude-core', 'efude-canvas')
+            'efude-canvas' = @('efude-core')
+            'efude-gpu' = @('efude-brush', 'efude-canvas', 'efude-core')
+            'efude-io' = @('efude-canvas')
+            'efude-comic' = @()
+            'efude-ui' = @('efude-core', 'efude-input', 'efude-stroke', 'efude-brush', 'efude-canvas', 'efude-gpu', 'efude-io', 'efude-comic')
+            'efude-app' = @('efude-ui')
+            'efude' = @('efude-core', 'efude-input', 'efude-stroke', 'efude-brush', 'efude-canvas', 'efude-gpu', 'efude-io', 'efude-comic')
+          }
+          foreach ($package in $metadata.packages) {
+            if (-not $allowedEngineDependencies.ContainsKey($package.name)) { continue }
+            foreach ($dependency in $package.dependencies) {
+              if ($dependency.name.StartsWith('efude-') -and $dependency.name -notin $allowedEngineDependencies[$package.name]) {
+                throw "$($package.name) must not depend on $($dependency.name)"
+              }
+            }
+          }
+      - run: cargo clippy --workspace --all-targets -- -D warnings -A clippy::doc_markdown -A clippy::uninlined_format_args -A clippy::type_complexity
+      - run: cargo deny check
+      - run: cargo test --workspace
+      - name: Generate third-party notices
+        shell: bash
+        run: cargo about generate about.hbs > THIRD_PARTY_NOTICES.txt
+      - run: cargo build --workspace --release
+      - name: Record where this build's source code is
+        shell: bash
+        run: |
+          set -euo pipefail
+          repo="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"
+          if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
+            version="${GITHUB_REF_NAME}"
+            download="${repo}/archive/refs/tags/${GITHUB_REF_NAME}.zip"
+          else
+            version="development build (no release tag)"
+            download="${repo}/archive/${GITHUB_SHA}.zip"
+          fi
+          {
+            echo "Efude - source code of this build"
+            echo
+            echo "Version:  ${version}"
+            echo "Commit:   ${GITHUB_SHA}"
+            echo "Source:   ${repo}/tree/${GITHUB_SHA}"
+            echo "Download: ${download}"
+            echo
+            echo "Efude's application is distributed under the Mozilla Public License 2.0"
+            echo "(LICENSE-MPL) and its engine crates under MIT OR Apache-2.0. The source"
+            echo "code of this exact build is available at the links above. The libraries"
+            echo "it uses, with their licenses, are listed in THIRD_PARTY_NOTICES.txt;"
+            echo "their versions are pinned in Cargo.lock in that source."
+            echo
+            echo "このビルドのソースコードは上記のリンクから入手できます。アプリ部分は"
+            echo "Mozilla Public License 2.0（LICENSE-MPL）、エンジン部分は MIT OR"
+            echo "Apache-2.0 です。使用ライブラリとライセンスは THIRD_PARTY_NOTICES.txt"
+            echo "にあります。"
+          } > SOURCE.txt
+          cat SOURCE.txt
+      - name: Build Windows MSI installer
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Path "target/wix" -Force | Out-Null
+          $wixRoot = Get-ChildItem -Directory "C:\Program Files (x86)\WiX Toolset v3*" | Sort-Object Name -Descending | Select-Object -First 1
+          if (-not $wixRoot) { throw "WiX Toolset v3 was not found on the Windows runner" }
+          $env:WIX = $wixRoot.FullName
+          $env:Path = (Join-Path $wixRoot.FullName "bin") + ";" + $env:Path
+          cargo wix --package efude-app --no-build --nocapture --output "target/wix"
+      - name: Sign Windows binaries and installer
+        if: ${{ vars.WINDOWS_SIGNING_ENABLED == 'true' && github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') }}
+        shell: pwsh
+        env:
+          EFUDE_SIGNING_PFX_B64: ${{ secrets.WINDOWS_SIGNING_CERTIFICATE_PFX_B64 }}
+          EFUDE_SIGNING_PASSWORD: ${{ secrets.WINDOWS_SIGNING_CERTIFICATE_PASSWORD }}
+        run: |
+          if (-not $env:EFUDE_SIGNING_PFX_B64 -or -not $env:EFUDE_SIGNING_PASSWORD) {
+            throw "Windows signing is enabled but the signing certificate secrets are missing"
+          }
+          $signtool = Get-ChildItem -Path "${env:ProgramFiles(x86)}\Windows Kits\10\bin" -Filter "signtool.exe" -Recurse -File |
+            Where-Object { $_.FullName -match "\\x64\\signtool\.exe$" } |
+            Sort-Object FullName -Descending |
+            Select-Object -First 1
+          if (-not $signtool) { throw "Windows SDK SignTool was not found" }
+          $certificatePath = Join-Path $env:RUNNER_TEMP "efude-signing.pfx"
+          try {
+            [System.IO.File]::WriteAllBytes($certificatePath, [Convert]::FromBase64String($env:EFUDE_SIGNING_PFX_B64))
+            $filesToSign = @("target/release/efude.exe") + @(Get-ChildItem -Path "target/wix" -Filter "*.msi" -File | ForEach-Object FullName)
+            if ($filesToSign.Count -lt 2) { throw "The release executable or MSI installer is missing" }
+            foreach ($file in $filesToSign) {
+              & $signtool.FullName sign /f $certificatePath /p $env:EFUDE_SIGNING_PASSWORD /fd SHA256 /tr "https://timestamp.digicert.com" /td SHA256 $file
+              if ($LASTEXITCODE -ne 0) { throw "Signing failed for $file" }
+            }
+          }
+          finally {
+            Remove-Item -LiteralPath $certificatePath -Force -ErrorAction SilentlyContinue
+          }
+      - name: Package portable Windows build
+        shell: pwsh
+        run: |
+          $packageDir = Join-Path $env:RUNNER_TEMP "Efude-portable"
+          New-Item -ItemType Directory -Path $packageDir -Force | Out-Null
+          Copy-Item "target/release/efude.exe" $packageDir
+          Copy-Item "THIRD_PARTY_NOTICES.txt" $packageDir
+          Copy-Item "NOTICE", "LICENSE-MIT", "LICENSE-APACHE", "LICENSE-MPL", "TRADEMARKS.md" $packageDir
+          Copy-Item "docs/USER_GUIDE.md" $packageDir
+          Copy-Item "SOURCE.txt" $packageDir
+          Compress-Archive -Path (Join-Path $packageDir "*") -DestinationPath "Efude-portable.zip" -Force
+      - uses: actions/upload-artifact@v4
+        with:
+          name: efude-windows-build
+          path: |
+            target/release/efude.exe
+            THIRD_PARTY_NOTICES.txt
+            SOURCE.txt
+            Efude-portable.zip
+            target/wix/*.msi
+  release:
+    if: ${{ github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') }}
+    needs: windows
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: efude-windows-build
+          path: release-artifacts
+      - name: Name the release files after the version
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="${GITHUB_REF_NAME}"
+          mkdir -p release
+          cp release-artifacts/Efude-portable.zip "release/Efude-${tag}-windows-x64.zip"
+          msi=$(ls release-artifacts/target/wix/*.msi | head -n 1)
+          cp "$msi" "release/Efude-${tag}-windows-x64.msi"
+          cp release-artifacts/THIRD_PARTY_NOTICES.txt release/
+          cp release-artifacts/SOURCE.txt release/
+          ls -l release
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Efude ${{ github.ref_name }}
+          generate_release_notes: true
+          # Tags with a suffix (v0.1.0-alpha.1) are marked as test releases.
+          prerelease: ${{ contains(github.ref_name, '-') }}
+          files: |
+            release/Efude-*-windows-x64.zip
+            release/Efude-*-windows-x64.msi
+            release/THIRD_PARTY_NOTICES.txt
+            release/SOURCE.txt

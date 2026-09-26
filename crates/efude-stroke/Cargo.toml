@@ -1,0 +1,18 @@
+[package]
+name = "efude-stroke"
+version.workspace = true
+edition.workspace = true
+license = "MIT OR Apache-2.0"
+description = "Stroke building for the Efude painting app: stabilization, spacing and tapers."
+repository.workspace = true
+homepage.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+keywords = ["painting", "drawing", "stroke", "brush"]
+categories = ["graphics"]
+[dependencies]
+efude-core.workspace = true
+glam.workspace = true
+
+[lints]
+workspace = true

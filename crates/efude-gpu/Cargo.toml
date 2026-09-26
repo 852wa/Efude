@@ -1,0 +1,24 @@
+[package]
+name = "efude-gpu"
+version.workspace = true
+edition.workspace = true
+license = "MIT OR Apache-2.0"
+description = "GPU painting and compositing for the Efude painting app, built on wgpu."
+repository.workspace = true
+homepage.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+keywords = ["painting", "wgpu", "gpu", "raster"]
+categories = ["graphics", "rendering"]
+[dependencies]
+efude-brush.workspace = true
+wgpu.workspace = true
+pollster = "0.4"
+
+[dev-dependencies]
+efude-canvas.workspace = true
+efude-core.workspace = true
+glam.workspace = true
+
+[lints]
+workspace = true

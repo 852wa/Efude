@@ -1,0 +1,23 @@
+[package]
+name = "efude-io"
+version.workspace = true
+edition.workspace = true
+license = "MIT OR Apache-2.0"
+description = "File input and output for the Efude painting app: the .efude format, PSD, PNG and JPEG."
+repository.workspace = true
+homepage.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+keywords = ["painting", "psd", "file-format", "image"]
+categories = ["graphics", "multimedia::images", "parser-implementations"]
+[dependencies]
+efude-canvas.workspace = true
+serde_json.workspace = true
+zip.workspace = true
+png.workspace = true
+tempfile.workspace = true
+image.workspace = true
+lz4_flex.workspace = true
+
+[lints]
+workspace = true

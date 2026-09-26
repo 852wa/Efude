@@ -1,0 +1,21 @@
+[package]
+name = "efude-comic"
+version.workspace = true
+edition.workspace = true
+license = "MIT OR Apache-2.0"
+description = "Comic features for Efude: page setup and guides, panels, effect lines, text and balloons, books."
+repository.workspace = true
+homepage.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+keywords = ["manga", "comic", "painting", "screentone"]
+categories = ["graphics"]
+[dependencies]
+glam = { workspace = true, features = ["serde"] }
+serde.workspace = true
+serde_json.workspace = true
+ab_glyph = "0.2"
+ttf-parser = "0.25"
+
+[lints]
+workspace = true

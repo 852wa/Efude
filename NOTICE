@@ -1,0 +1,23 @@
+Copyright 2026 Hakoniwa
+
+The application vendors eframe 0.31.1 with small Cargo feature changes to
+disable bundled fonts and its arboard-based system clipboard dependency.
+eframe is Copyright (c) 2018-2021 Emil Ernerfeldt and is provided under
+Apache-2.0 OR MIT. Its upstream source is https://github.com/emilk/egui/tree/0.31.1.
+
+Source code
+-----------
+The source code of Efude is available at https://github.com/852wa/Efude.
+Each binary release is built from a version tag (for example v0.1.0); the
+source of that version is at https://github.com/852wa/Efude/tree/<tag> and
+can be downloaded from
+https://github.com/852wa/Efude/archive/refs/tags/<tag>.zip. SOURCE.txt,
+shipped with every binary build, names the exact tag and commit it was built
+from. The application is distributed under the Mozilla Public License 2.0
+(LICENSE-MPL); see section 3.2 of that license.
+
+Efude のソースコードは https://github.com/852wa/Efude で入手できます。
+各リリースはバージョンのタグ（例: v0.1.0）から作られ、そのバージョンの
+ソースは上記の tree/<タグ> または archive/refs/tags/<タグ>.zip から入手で
+きます。配布物に同梱の SOURCE.txt に、作成元のタグとコミットが書かれて
+います。

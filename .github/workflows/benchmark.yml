@@ -1,0 +1,29 @@
+name: Performance benchmark
+# Run by hand (Actions → Performance benchmark → Run workflow). It stores
+# results on the gh-pages branch, which must exist first.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  benchmark:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.95.0
+      - name: Run benchmarks
+        shell: bash
+        run: |
+          mkdir -p target
+          cargo bench -p efude-ui --bench pipeline > target/benchmark-results.json
+      - name: Compare with previous runs
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: Efude performance
+          tool: customSmallerIsBetter
+          output-file-path: target/benchmark-results.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
+          alert-threshold: "110%"
+          comment-on-alert: true
+          fail-on-alert: false

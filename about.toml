@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2026 Hakoniwa
+# SPDX-License-Identifier: MPL-2.0
+accepted = [
+    "Apache-2.0",
+    "MIT",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "ISC",
+    "Zlib",
+    "Unicode-3.0",
+    "CC0-1.0",
+    "Unlicense",
+    "MPL-2.0",
+]
+targets = ["x86_64-pc-windows-msvc"]
+ignore-build-dependencies = false
+ignore-dev-dependencies = false
+ignore-transitive-dependencies = false
+workarounds = ["ring"]

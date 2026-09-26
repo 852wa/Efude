@@ -1,0 +1,20 @@
+[package]
+name = "efude-canvas"
+version.workspace = true
+edition.workspace = true
+license = "MIT OR Apache-2.0"
+description = "Canvas of the Efude painting app: tiled layers, blending, selections, history and image filters."
+repository.workspace = true
+homepage.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+keywords = ["painting", "layers", "raster", "image", "filters"]
+categories = ["graphics", "multimedia::images"]
+[dependencies]
+serde.workspace = true
+ron = "0.8"
+postcard.workspace = true
+efude-core.workspace = true
+
+[lints]
+workspace = true
